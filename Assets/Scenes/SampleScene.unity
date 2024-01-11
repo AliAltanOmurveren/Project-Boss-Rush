@@ -411,8 +411,10 @@ GameObject:
   - component: {fileID: 1619789676}
   - component: {fileID: 1619789675}
   - component: {fileID: 1619789679}
+  - component: {fileID: 1619789680}
   - component: {fileID: 1619789677}
   - component: {fileID: 1619789678}
+  - component: {fileID: 1619789681}
   m_Layer: 2
   m_Name: Ship
   m_TagString: Player
@@ -520,6 +522,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   middleGun: {fileID: 739194157}
+  leftGun: {fileID: 732701073}
+  rightGun: {fileID: 2125747075}
   line: {fileID: 93919993394251384, guid: 6911efae7fd39774ca0f1048e3f0fb47, type: 3}
 --- !u!61 &1619789679
 BoxCollider2D:
@@ -547,6 +551,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1851772, y: 0.88}
   m_EdgeRadius: 0
+--- !u!114 &1619789680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619789674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa4c6ab14f73cd4abf6d14b8b506e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1619789681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619789674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdec239c40de9d41b0464e721cc3d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 410446065454651330, guid: 91f562bba90fbb54384a3a9213226e76, type: 3}
+  middleGun: {fileID: 739194157}
+  leftGun: {fileID: 732701073}
+  RightGun: {fileID: 2125747075}
+  shootDelay: 0.2
 --- !u!1 &1889352052
 GameObject:
   m_ObjectHideFlags: 0

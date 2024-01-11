@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public bool isLaserUpgraded = false;
+    bool isLaserUpgraded = true;
+    bool isGunUpgraded = true;
 
     void Start()
     {
@@ -15,5 +16,13 @@ public class Player : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public bool IsGunUpgraded(){
+        return isGunUpgraded;
+    }
+
+    public bool IsLaserUpgraded(){
+        return isLaserUpgraded;
     }
 }
